@@ -29,10 +29,10 @@ function kata1() {
 
   main.appendChild(addNewTitle);
 
-  return showResults(kataResult.join(", "));
+  return kataResult.join(", ");
 }
 
-kata1();
+showResults(kata1());
 
 // implemente o código do kata 2 aqui
 function kata2() {
@@ -48,10 +48,10 @@ function kata2() {
 
   main.appendChild(addNewTitle);
 
-  return showResults(kataResult.join(", "));
+  return kataResult.join(", ");
 }
 
-kata2();
+showResults(kata2());
 
 // implemente o código do kata 3 aqui
 function kata3() {
@@ -67,9 +67,9 @@ function kata3() {
 
   main.appendChild(addNewTitle);
 
-  return showResults(kataResult.join(", "));
+  return kataResult.join(", ");
 }
-kata3();
+showResults(kata3());
 
 // implemente o código do kata 4 aqui
 function kata4() {
@@ -85,15 +85,16 @@ function kata4() {
 
   main.appendChild(addNewTitle);
 
-  return showResults(kataResult.join(", "));
+  return kataResult.join(", ");
 }
+showResults(kata4());
 
 // implemente o código do kata 5 aqui
 function kata5() {
   const kataResult = [];
 
   for (let i = 25; i >= -25; i--) {
-    if (i % 5 === 0) {
+    if (i % 2 !== 0) {
       kataResult.push(i);
     }
   }
@@ -104,9 +105,9 @@ function kata5() {
 
   main.appendChild(addNewTitle);
 
-  return showResults(kataResult.join(", "));
+  return kataResult.join(", ");
 }
-kata5();
+showResults(kata5());
 
 // implemente o código do kata 6 aqui
 function kata6() {
@@ -124,9 +125,9 @@ function kata6() {
 
   main.appendChild(addNewTitle);
 
-  return showResults(kataResult.join(", "));
+  return kataResult.join(", ");
 }
-kata6();
+showResults(kata6());
 
 // implemente o código do kata 7 aqui
 function kata7() {
@@ -144,9 +145,9 @@ function kata7() {
 
   main.appendChild(addNewTitle);
 
-  return showResults(kataResult.join(", "));
+  return kataResult.join(", ");
 }
-kata7();
+showResults(kata7());
 
 // implemente o código do kata 8 aqui
 function kata8() {
@@ -165,9 +166,9 @@ function kata8() {
 
   main.appendChild(addNewTitle);
 
-  return showResults(kataResult.join(", "));
+  return kataResult.join(", ");
 }
-kata8();
+showResults(kata8());
 
 // implemente o código do kata 9 aqui
 function kata9() {
@@ -186,9 +187,9 @@ function kata9() {
 
   main.appendChild(addNewTitle);
 
-  return showResults(kataResult.join(", "));
+  return kataResult.join(", ");
 }
-kata9();
+showResults(kata9());
 
 // implemente o código do kata 10 aqui
 function kata10() {
@@ -198,9 +199,9 @@ function kata10() {
 
   main.appendChild(addNewTitle);
 
-  return showResults(sampleArray.join(", "));
+  return sampleArray.join(", ");
 }
-kata10();
+showResults(kata10());
 
 // implemente o código do kata 11 aqui
 function kata11() {
@@ -218,9 +219,9 @@ function kata11() {
 
   main.appendChild(addNewTitle);
 
-  return showResults(kataResult.join(", "));
+  return kataResult.join(", ");
 }
-kata11();
+showResults(kata11());
 
 // implemente o código do kata 12 aqui
 function kata12() {
@@ -238,9 +239,9 @@ function kata12() {
 
   main.appendChild(addNewTitle);
 
-  return showResults(kataResult.join(", "));
+  return kataResult.join(", ");
 }
-kata12();
+showResults(kata12());
 
 // implemente o código do kata 13 aqui
 function kata13() {
@@ -258,9 +259,9 @@ function kata13() {
 
   main.appendChild(addNewTitle);
 
-  return showResults(kataResult.join(", "));
+  return kataResult.join(", ");
 }
-kata13();
+showResults(kata13());
 
 // implemente o código do kata 14 aqui
 function kata14() {
@@ -276,9 +277,9 @@ function kata14() {
 
   main.appendChild(addNewTitle);
 
-  return showResults(kataResult.join(", "));
+  return kataResult.join(", ");
 }
-kata14();
+showResults(kata14());
 
 // implemente o código do kata 15 aqui
 function kata15() {
@@ -294,9 +295,9 @@ function kata15() {
 
   main.appendChild(addNewTitle);
 
-  return showResults(kataResult);
+  return kataResult;
 }
-kata15();
+showResults(kata15());
 
 // implemente o código do kata 16 aqui
 function kata16() {
@@ -313,9 +314,9 @@ function kata16() {
 
   main.appendChild(addNewTitle);
 
-  return showResults(kataResult);
+  return kataResult;
 }
-kata16();
+showResults(kata16());
 
 // implemente o código do kata 17 aqui
 function kata17() {
@@ -333,9 +334,9 @@ function kata17() {
 
   main.appendChild(addNewTitle);
 
-  return showResults(kataResult);
+  return kataResult;
 }
-kata17();
+showResults(kata17());
 
 // implemente o código do kata 18 aqui
 function kata18() {
@@ -353,9 +354,9 @@ function kata18() {
 
   main.appendChild(addNewTitle);
 
-  return showResults(kataResult);
+  return kataResult;
 }
-kata18();
+showResults(kata18());
 
 /* ------------------ ATIVIDADES BONUS ------------------ */
 
@@ -397,7 +398,6 @@ function kataBonus2(n) {
   sectionBonus.appendChild(retangleBonus1Wrap);
 
   for (let i = 105; i <= n; i += 5) {
-    console.log(i);
     const retangleBonus1 = document.createElement("div");
     retangleBonus1Wrap.appendChild(retangleBonus1);
 
@@ -419,7 +419,6 @@ function kataBonus3() {
   sectionBonus.appendChild(retangleBonus1Wrap);
 
   for (let i = 0; i <= sampleArray.length - 1; i++) {
-    console.log(i);
     const retangleBonus1 = document.createElement("div");
     retangleBonus1Wrap.appendChild(retangleBonus1);
 
@@ -441,7 +440,6 @@ function kataBonus4() {
   sectionBonus.appendChild(retangleBonus1Wrap);
 
   for (let i = 0; i <= sampleArray.length - 1; i++) {
-    console.log(i);
     const retangleBonus1 = document.createElement("div");
     retangleBonus1Wrap.appendChild(retangleBonus1);
 
@@ -467,7 +465,6 @@ function kataBonus5() {
   sectionBonus.appendChild(retangleBonus1Wrap);
 
   for (let i = 0; i <= sampleArray.length - 1; i++) {
-    console.log(i);
     const retangleBonus1 = document.createElement("div");
     retangleBonus1Wrap.appendChild(retangleBonus1);
 
